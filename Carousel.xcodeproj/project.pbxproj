@@ -13,6 +13,10 @@
 		2B20A18E19CCF12300A1083E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B20A18D19CCF12300A1083E /* Images.xcassets */; };
 		2B20A19119CCF12300A1083E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B20A18F19CCF12300A1083E /* LaunchScreen.xib */; };
 		2B20A19D19CCF12300A1083E /* CarouselTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B20A19C19CCF12300A1083E /* CarouselTests.swift */; };
+		2B20A1A719CCF21900A1083E /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B20A1A619CCF21900A1083E /* StartViewController.swift */; };
+		2B20A1A919CCF3E200A1083E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B20A1A819CCF3E200A1083E /* SignInViewController.swift */; };
+		2B20A1AB19CCF3E900A1083E /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B20A1AA19CCF3E900A1083E /* CreateAccountViewController.swift */; };
+		2B20A1AD19CD09D500A1083E /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B20A1AC19CD09D500A1083E /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		2B20A19619CCF12300A1083E /* CarouselTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarouselTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B20A19B19CCF12300A1083E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B20A19C19CCF12300A1083E /* CarouselTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselTests.swift; sourceTree = "<group>"; };
+		2B20A1A619CCF21900A1083E /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		2B20A1A819CCF3E200A1083E /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		2B20A1AA19CCF3E900A1083E /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		2B20A1AC19CD09D500A1083E /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +88,10 @@
 				2B20A18619CCF12300A1083E /* AppDelegate.swift */,
 				2B20A18819CCF12300A1083E /* ViewController.swift */,
 				2B20A18A19CCF12300A1083E /* Main.storyboard */,
+				2B20A1AC19CD09D500A1083E /* WelcomeViewController.swift */,
+				2B20A1A819CCF3E200A1083E /* SignInViewController.swift */,
+				2B20A1AA19CCF3E900A1083E /* CreateAccountViewController.swift */,
+				2B20A1A619CCF21900A1083E /* StartViewController.swift */,
 				2B20A18D19CCF12300A1083E /* Images.xcassets */,
 				2B20A18F19CCF12300A1083E /* LaunchScreen.xib */,
 				2B20A18419CCF12300A1083E /* Supporting Files */,
@@ -212,8 +224,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B20A1AB19CCF3E900A1083E /* CreateAccountViewController.swift in Sources */,
+				2B20A1A919CCF3E200A1083E /* SignInViewController.swift in Sources */,
 				2B20A18919CCF12300A1083E /* ViewController.swift in Sources */,
+				2B20A1AD19CD09D500A1083E /* WelcomeViewController.swift in Sources */,
 				2B20A18719CCF12300A1083E /* AppDelegate.swift in Sources */,
+				2B20A1A719CCF21900A1083E /* StartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
