@@ -12,9 +12,20 @@ class SignInViewController: UIViewController {
 
     @IBOutlet weak var emailField: UITextField!
     
+    @IBOutlet weak var signInImageView: UIImageView!
+   
+    @IBOutlet weak var signInButton: UIButton!
     @IBOutlet weak var passwordField: UITextField!
    
     @IBOutlet weak var signInScrollView: UIScrollView!
+    
+    
+    @IBAction func signInOnBack(sender: AnyObject) {
+        navigationController?.popViewControllerAnimated(true)
+    }
+    
+    var point1 = CGPoint(x: 0, y: 100)
+    
     
     func delay(delay:Double, closure:()->()) {
         dispatch_after(
@@ -26,39 +37,56 @@ class SignInViewController: UIViewController {
     }
     
     
+    
+    
+    
+    
     @IBAction func signInButton(sender: AnyObject) {
-        if emailField.text == "" {
+    
+            if emailField.text == "" {
              var noEmailAlert = UIAlertView(title: "Email Required", message: "Please enter an email address", delegate: self, cancelButtonTitle: "OK")
             noEmailAlert.show()
         }
         
-        else if passwordField.text == ""{
+            else if passwordField.text == ""{
             var noPasswordAlert = UIAlertView(title: "Password Required", message: "Please enter your password", delegate: self, cancelButtonTitle: "OK")
             noPasswordAlert.show()
         }
         
-        else if emailField.text == "loren@email.com" && passwordField.text == "lorenpassword" {
+            else {
+            
             var signingInAlert = UIAlertView (title: "Signing in...", message: nil, delegate: self, cancelButtonTitle: nil)
             signingInAlert.show()
+             
+
+                delay (2) {
+                
+                    if self.emailField.text == "loren@email.com" && self.passwordField.text == "lorenpassword" {
+                    self.performSegueWithIdentifier("signInSegue", sender: self)
+                        signingInAlert.dismissWithClickedButtonIndex(-1, animated: true)
+     
+                    }
             
-           delay(2) {
-            self.performSegueWithIdentifier("signInSegue", sender: self)
+                else {
+                var invalidCredentialsAlert = UIAlertView(title: "Invalid Login", message: "Please try again", delegate: self, cancelButtonTitle: "OK")
+                invalidCredentialsAlert.show()
+                       signingInAlert.dismissWithClickedButtonIndex(-1, animated: true)
+                    }
+            
+        
+                }
+        
             }
-            
         }
-        
-        else {
-            var invalidCredentialsAlert = UIAlertView(title: "Invalid Login", message: "Please try again", delegate: self, cancelButtonTitle: "OK")
-            invalidCredentialsAlert.show()
-        }
-        
-    }
     
-    
+       
     @IBAction func onEmailEditBegin(sender: AnyObject) {
+    signInScrollView.setContentOffset(point1, animated: true)
+        signInImageView.transform = CGAffineTransformMakeTranslation(0, -50)
+        signInButton.transform = CGAffineTransformMakeTranslation(0, -50)
         
-    
         
+        println("editing email")
     }
     
     

@@ -17,6 +17,9 @@
 		2B20A1A919CCF3E200A1083E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B20A1A819CCF3E200A1083E /* SignInViewController.swift */; };
 		2B20A1AB19CCF3E900A1083E /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B20A1AA19CCF3E900A1083E /* CreateAccountViewController.swift */; };
 		2B20A1AD19CD09D500A1083E /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B20A1AC19CD09D500A1083E /* WelcomeViewController.swift */; };
+		2B20A1AF19CD59A300A1083E /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B20A1AE19CD59A300A1083E /* FeedViewController.swift */; };
+		2B20A1B119CDDFE900A1083E /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B20A1B019CDDFE900A1083E /* ConversationsViewController.swift */; };
+		2B20A1B319CDE11E00A1083E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B20A1B219CDE11E00A1083E /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		2B20A1A819CCF3E200A1083E /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		2B20A1AA19CCF3E900A1083E /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		2B20A1AC19CD09D500A1083E /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		2B20A1AE19CD59A300A1083E /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		2B20A1B019CDDFE900A1083E /* ConversationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationsViewController.swift; sourceTree = "<group>"; };
+		2B20A1B219CDE11E00A1083E /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +94,9 @@
 				2B20A18619CCF12300A1083E /* AppDelegate.swift */,
 				2B20A18819CCF12300A1083E /* ViewController.swift */,
 				2B20A18A19CCF12300A1083E /* Main.storyboard */,
+				2B20A1B219CDE11E00A1083E /* SettingsViewController.swift */,
+				2B20A1B019CDDFE900A1083E /* ConversationsViewController.swift */,
+				2B20A1AE19CD59A300A1083E /* FeedViewController.swift */,
 				2B20A1AC19CD09D500A1083E /* WelcomeViewController.swift */,
 				2B20A1A819CCF3E200A1083E /* SignInViewController.swift */,
 				2B20A1AA19CCF3E900A1083E /* CreateAccountViewController.swift */,
@@ -227,9 +236,12 @@
 				2B20A1AB19CCF3E900A1083E /* CreateAccountViewController.swift in Sources */,
 				2B20A1A919CCF3E200A1083E /* SignInViewController.swift in Sources */,
 				2B20A18919CCF12300A1083E /* ViewController.swift in Sources */,
+				2B20A1B119CDDFE900A1083E /* ConversationsViewController.swift in Sources */,
 				2B20A1AD19CD09D500A1083E /* WelcomeViewController.swift in Sources */,
 				2B20A18719CCF12300A1083E /* AppDelegate.swift in Sources */,
 				2B20A1A719CCF21900A1083E /* StartViewController.swift in Sources */,
+				2B20A1AF19CD59A300A1083E /* FeedViewController.swift in Sources */,
+				2B20A1B319CDE11E00A1083E /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

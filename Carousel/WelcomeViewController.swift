@@ -8,12 +8,47 @@
 
 import UIKit
 
-class WelcomeViewController: UIViewController {
+class WelcomeViewController: UIViewController, UIScrollViewDelegate {
 
     @IBOutlet weak var welcomeScrollView: UIScrollView!
+    
+    @IBOutlet weak var takeCarouselButton: UIButton!
+    @IBOutlet weak var pageControl: UIPageControl!
+    
+    @IBOutlet weak var backUpText: UIImageView!
+    @IBOutlet weak var backUpSwitch: UISwitch!
+    
+    func scrollViewDidEndDecelerating(welcomeScrollView: UIScrollView!) {
+        // Get the current page based on the scroll offset
+        var page : Int = Int(round(welcomeScrollView.contentOffset.x / 320))
+        println(page)
+        
+        // Set the current page, so the dots will update
+        if page == 3{
+            pageControl.hidden = true
+            backUpSwitch.hidden = false
+            backUpText.hidden = false
+            takeCarouselButton.hidden = false
+           
+          }
+        else {
+            pageControl.hidden = false
+        }
+        
+        pageControl.currentPage = page
+        
+    }
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        backUpSwitch.hidden = true
+        backUpText.hidden = true
+        takeCarouselButton.hidden = true
+    
+        
+        welcomeScrollView.delegate = self
         
         welcomeScrollView.contentSize = CGSize(width: 1280, height: 568)
 
