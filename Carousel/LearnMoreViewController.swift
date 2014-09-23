@@ -1,29 +1,46 @@
 //
-//  SettingsViewController.swift
+//  LearnMoreViewController.swift
 //  Carousel
 //
-//  Created by Loren Heiman on 9/20/14.
+//  Created by Loren Heiman on 9/21/14.
 //  Copyright (c) 2014 Loren Heiman. All rights reserved.
 //
 
 import UIKit
 
-class SettingsViewController: UIViewController {
+class LearnMoreViewController: UIViewController {
+  
+    @IBOutlet weak var checkBoxViewPhotoImageView: UIImageView!
     
-    @IBAction func settingsBack(sender: AnyObject) {
+    @IBOutlet weak var checkBoxTimeWheelImageView: UIImageView!
+    
+    @IBOutlet weak var checkBoxSharePhotoImageView: UIImageView!
+    
+
+    
+    
+    
+    
+    @IBAction func learnMoreBack(sender: AnyObject) {
         dismissViewControllerAnimated(true , completion: nil)
-
     }
-    @IBOutlet weak var settingsImageView: UIImageView!
-    
-    @IBOutlet weak var settingsScrollView: UIScrollView!
-    
 
 
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
-        settingsScrollView.contentSize = settingsImageView.frame.size
+        
+    
+        
+        if PhotoDetailViewController.checkPhotoDetailDone() == true {
+            
+            checkBoxViewPhotoImageView.highlighted = true
+        }
+        
+        
+        
 
         // Do any additional setup after loading the view.
     }

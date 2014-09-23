@@ -1,31 +1,30 @@
 //
-//  SettingsViewController.swift
+//  PhotoDetailViewController.swift
 //  Carousel
 //
-//  Created by Loren Heiman on 9/20/14.
+//  Created by Loren Heiman on 9/21/14.
 //  Copyright (c) 2014 Loren Heiman. All rights reserved.
 //
 
 import UIKit
 
-class SettingsViewController: UIViewController {
+class PhotoDetailViewController: UIViewController {
     
-    @IBAction func settingsBack(sender: AnyObject) {
-        dismissViewControllerAnimated(true , completion: nil)
-
+    var photoDetailDone = false
+    
+    func checkPhotoDetailDone()  -> Bool{
+        return self.photoDetailDone
     }
-    @IBOutlet weak var settingsImageView: UIImageView!
     
-    @IBOutlet weak var settingsScrollView: UIScrollView!
     
-
-
+    @IBAction func PhotoDetailBack(sender: AnyObject) {
+        navigationController?.popViewControllerAnimated(true)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        settingsScrollView.contentSize = settingsImageView.frame.size
-
-        // Do any additional setup after loading the view.
+        photoDetailDone = true
+         // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {

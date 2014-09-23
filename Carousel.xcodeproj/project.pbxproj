@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B1138DD19CFEA6700F1DD85 /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1138DC19CFEA6700F1DD85 /* PhotoDetailViewController.swift */; };
 		2B20A18719CCF12300A1083E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B20A18619CCF12300A1083E /* AppDelegate.swift */; };
 		2B20A18919CCF12300A1083E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B20A18819CCF12300A1083E /* ViewController.swift */; };
 		2B20A18C19CCF12300A1083E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B20A18A19CCF12300A1083E /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 		2B20A1AF19CD59A300A1083E /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B20A1AE19CD59A300A1083E /* FeedViewController.swift */; };
 		2B20A1B119CDDFE900A1083E /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B20A1B019CDDFE900A1083E /* ConversationsViewController.swift */; };
 		2B20A1B319CDE11E00A1083E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B20A1B219CDE11E00A1083E /* SettingsViewController.swift */; };
+		2B7CB25919CFE5150071082E /* LearnMoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7CB25819CFE5150071082E /* LearnMoreViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B1138DC19CFEA6700F1DD85 /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewController.swift; sourceTree = "<group>"; };
 		2B20A18119CCF12300A1083E /* Carousel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carousel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B20A18519CCF12300A1083E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B20A18619CCF12300A1083E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +53,7 @@
 		2B20A1AE19CD59A300A1083E /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		2B20A1B019CDDFE900A1083E /* ConversationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationsViewController.swift; sourceTree = "<group>"; };
 		2B20A1B219CDE11E00A1083E /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		2B7CB25819CFE5150071082E /* LearnMoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnMoreViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,8 @@
 				2B20A18619CCF12300A1083E /* AppDelegate.swift */,
 				2B20A18819CCF12300A1083E /* ViewController.swift */,
 				2B20A18A19CCF12300A1083E /* Main.storyboard */,
+				2B1138DC19CFEA6700F1DD85 /* PhotoDetailViewController.swift */,
+				2B7CB25819CFE5150071082E /* LearnMoreViewController.swift */,
 				2B20A1B219CDE11E00A1083E /* SettingsViewController.swift */,
 				2B20A1B019CDDFE900A1083E /* ConversationsViewController.swift */,
 				2B20A1AE19CD59A300A1083E /* FeedViewController.swift */,
@@ -235,8 +241,10 @@
 			files = (
 				2B20A1AB19CCF3E900A1083E /* CreateAccountViewController.swift in Sources */,
 				2B20A1A919CCF3E200A1083E /* SignInViewController.swift in Sources */,
+				2B7CB25919CFE5150071082E /* LearnMoreViewController.swift in Sources */,
 				2B20A18919CCF12300A1083E /* ViewController.swift in Sources */,
 				2B20A1B119CDDFE900A1083E /* ConversationsViewController.swift in Sources */,
+				2B1138DD19CFEA6700F1DD85 /* PhotoDetailViewController.swift in Sources */,
 				2B20A1AD19CD09D500A1083E /* WelcomeViewController.swift in Sources */,
 				2B20A18719CCF12300A1083E /* AppDelegate.swift in Sources */,
 				2B20A1A719CCF21900A1083E /* StartViewController.swift in Sources */,
@@ -433,6 +441,7 @@
 				2B20A1A219CCF12300A1083E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2B20A1A319CCF12300A1083E /* Build configuration list for PBXNativeTarget "CarouselTests" */ = {
 			isa = XCConfigurationList;
@@ -441,6 +450,7 @@
 				2B20A1A519CCF12300A1083E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

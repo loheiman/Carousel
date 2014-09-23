@@ -61,7 +61,7 @@ class SignInViewController: UIViewController {
 
                 delay (2) {
                 
-                    if self.emailField.text == "loren@email.com" && self.passwordField.text == "lorenpassword" {
+                    if self.emailField.text == "email" && self.passwordField.text == "pass" {
                     self.performSegueWithIdentifier("signInSegue", sender: self)
                         signingInAlert.dismissWithClickedButtonIndex(-1, animated: true)
      

@@ -9,11 +9,33 @@
 import UIKit
 
 class FeedViewController: UIViewController {
-
+    
+    var photoDetailDone = false
+    var sharePhotoDone = false
+    var timeWheelDone = false
+    
+   
+    @IBAction func PhotoOnClick(sender: AnyObject) {
+        photoDetailDone = true
+        
+    }
+    @IBOutlet weak var learnMoreBannerImageView: UIImageView!
     
     @IBOutlet weak var feedScrollView: UIScrollView!
     
     @IBOutlet weak var feedImageView: UIImageView!
+
+    
+    @IBAction func learnMoreDismiss(sender: AnyObject) {
+        learnMoreBannerImageView.hidden = true
+        
+  
+        
+        
+    }
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
