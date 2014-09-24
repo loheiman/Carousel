@@ -10,20 +10,35 @@ import UIKit
 
 class PhotoDetailViewController: UIViewController {
     
-    var photoDetailDone = false
+    @IBOutlet weak var swipeToShareLabel: UILabel!
     
-    func checkPhotoDetailDone()  -> Bool{
-        return self.photoDetailDone
+    var defaults = NSUserDefaults.standardUserDefaults()
+    
+    @IBOutlet weak var shared: UILabel!
+    
+    @IBAction func onTap(sender: UITapGestureRecognizer) {
+        dismissViewControllerAnimated(true , completion: nil)
+        println("tapped")
     }
     
     
-    @IBAction func PhotoDetailBack(sender: AnyObject) {
-        navigationController?.popViewControllerAnimated(true)
+    
+    @IBAction func swipeUp(sender: AnyObject) {
+        swipeToShareLabel.hidden = true
+        shared.hidden = false
+        self.defaults.setInteger(1, forKey: "photoShared")
+        defaults.synchronize()
     }
-    override func viewDidLoad() {
+    
+       override func viewDidLoad() {
         super.viewDidLoad()
         
-        photoDetailDone = true
+        shared.hidden = true
+        
+        defaults.setInteger(1, forKey: "photoViewed")
+        
+        defaults.synchronize()
+        
          // Do any additional setup after loading the view.
     }
 

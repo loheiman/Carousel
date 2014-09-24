@@ -9,16 +9,19 @@
 import UIKit
 
 class FeedViewController: UIViewController {
-    
-    var photoDetailDone = false
-    var sharePhotoDone = false
-    var timeWheelDone = false
-    
    
-    @IBAction func PhotoOnClick(sender: AnyObject) {
-        photoDetailDone = true
-        
+    var defaults = NSUserDefaults.standardUserDefaults()
+    
+     var point1 = CGPoint(x: 0, y: 300)
+
+    
+    @IBAction func swipeTimeWheel(sender: AnyObject) {
+    defaults.setInteger(1, forKey: "timeWheel")
+     defaults.synchronize()
+        feedScrollView.setContentOffset(point1, animated: true)
     }
+   
+
     @IBOutlet weak var learnMoreBannerImageView: UIImageView!
     
     @IBOutlet weak var feedScrollView: UIScrollView!
@@ -29,7 +32,9 @@ class FeedViewController: UIViewController {
     @IBAction func learnMoreDismiss(sender: AnyObject) {
         learnMoreBannerImageView.hidden = true
         
-  
+        
+        
+      
         
         
     }
@@ -40,7 +45,21 @@ class FeedViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        
+        if defaults.integerForKey("photoViewed") == 1 && defaults.integerForKey("photoShared") == 1 && defaults.integerForKey("timeWheel") == 1 {
+            
+            learnMoreBannerImageView.hidden = true
+        }
+
+        
+        
+        
+        
+        
         feedScrollView.contentSize = feedImageView.frame.size
+        
+        
 
         // Do any additional setup after loading the view.
     }
